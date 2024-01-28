@@ -10,7 +10,7 @@ const PORT = 8080;
 // GET - / - returns homepage
 app.get('/', (req, res) => {
     // serve up the public folder as static index.html file
-
+    res.sendFile(_dirname + "/public/index.html");
 });
 
 // hello world route

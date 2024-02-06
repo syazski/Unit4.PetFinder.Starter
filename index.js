@@ -33,7 +33,7 @@ app.get('/api/v1/pets/owner', (req, res) => {
     const pet = pets.find(pet => pet.owner === owner);
 
     // send the pet as a response
-    res.send({pet});
+    res.send(pet);
 
 });
 
@@ -46,7 +46,7 @@ app.get('/api/v1/pets/:name', (req, res) => {
     const pet = pets.find(pet => pet.name === petName);
 
     // send the pet as a response
-    res.send({pet})
+    res.send(pet)
 
 });
 
